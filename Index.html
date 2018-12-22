@@ -1,0 +1,315 @@
+<html>
+<head>
+<title> Bitch lasagna:) </title>
+<meta charset="UTF-8">
+<meta name="description" content="TU4N ENGEL Ewr ">
+	<link rel="icon" type="image/png" href="https://i.ibb.co/QDjFt37/IMG-20181221-125008.png">
+</head>
+<body bgcolor="black">
+<script> alert("Situs Terlarang!!!") </script> <script> alert("Tapi Boong:v") </script> 
+<script> alert("Ewr Ewr Ewr:v") </script> <script> alert("Bitch Lasagna") </script> 
+<script type="text/javascript">
+var snowmax=50
+var snowcolor=new Array("#AAAACC","#DDDDFF","#CCCCDD","#F3F3F3","#F0FFFF")
+var snowtype=new Array("Arial Black","Arial Narrow","Times","Comic Sans MS")
+var snowletter="*"
+var sinkspeed=0.9
+var snowmaxsize=50
+var snowminsize=8
+var snowingzone=1
+// Do not edit below this line
+var snow=new Array()
+var marginbottom
+var marginright
+var timer
+var i_snow=0
+var x_mv=new Array();
+var crds=new Array();
+var lftrght=new Array();
+var browserinfos=navigator.userAgent
+var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/)
+var ns6=document.getElementById&&!document.all
+var opera=browserinfos.match(/Opera/)
+var browserok=ie5||ns6||opera
+function randommaker(range) {
+rand=Math.floor(range*Math.random())
+return rand
+}
+function initsnow() {
+if (ie5 || opera) {
+marginbottom = document.body.clientHeight
+marginright = document.body.clientWidth
+}
+else if (ns6) {
+marginbottom = window.innerHeight
+marginright = window.innerWidth
+}
+var snowsizerange=snowmaxsize-snowminsize
+for (i=0;i<=snowmax;i++) {
+crds[i] = 0;
+lftrght[i] = Math.random()*15;
+x_mv[i] = 0.03 + Math.random()/10;
+snow[i]=document.getElementById("s"+i)
+snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
+snow[i].size=randommaker(snowsizerange)+snowminsize
+snow[i].style.fontSize=snow[i].size
+snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
+snow[i].sink=sinkspeed*snow[i].size/5
+if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+snow[i].posy=randommaker(2*marginbottom-marginbottom-2*snow[i].size)
+snow[i].style.left=snow[i].posx
+snow[i].style.top=snow[i].posy
+}
+movesnow()
+}
+function movesnow() {
+for (i=0;i<=snowmax;i++) {
+crds[i] += x_mv[i];
+snow[i].posy+=snow[i].sink
+snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i]);
+snow[i].style.top=snow[i].posy
+if (snow[i].posy>=marginbottom-2*snow[i].size || parseInt(snow[i].style.left)>(marginright-3*lftrght[i])){
+if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+snow[i].posy=0
+}
+}
+var timer=setTimeout("movesnow()",50)
+}
+for (i=0;i<=snowmax;i++) {
+document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
+}
+if (browserok) {
+window.onload=initsnow
+}
+</script>
+<center><b></b><h4><b><font face="cursive" size="10" color="black"><marquee scrollamount="100" direction="right" size="50">______________________________</marquee></font></b></h4>
+<style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Jolly+Lodger');
+	.glitchtext {
+		justify-content: center;
+		align-l: center;
+		display: flex;
+	}
+	.text {
+		font-family: "Jolly Lodger";
+		font-size: 10px;
+		color: #000000;
+		text-shadow: 0 0 12.5px #0087FF;
+		margin: 4%;
+		margin-top: 2%;
+	}
+	.dud {
+		color: #757575;
+	}
+
+	h5 {
+		color: #fffffff;
+		font-family: "Jolly Lodger";
+		font-size: 50px;
+		font-weight: 400;
+		text-align: center;
+		margin: 0;
+		line-height: 0;
+		animation: glitch1 2.5s infinite;
+	}
+	h5:nth-child(2) {
+		color: #67f3da;
+		animation: glitch2 2.5s infinite;
+	}
+	h5:nth-child(3) {
+		color: #f16f6f;
+		animation: glitch3 2.5s infinite;
+	}
+	@keyframes glitch1 {
+		0% {
+			transform: none;
+			opacity: 1;
+		}
+		7% {
+			transform: skew(-0.5deg, -0.9deg);
+			opacity: 0.75;
+		}
+		10% {
+			transform: none;
+			opacity: 1;
+		}
+		27% {
+			transform: none;
+			opacity: 1;
+		}
+		30% {
+			transform: skew(0.8deg, -0.1deg);
+			opacity: 0.75;
+		}
+		35% {
+			transform: none;
+			opacity: 1;
+		}
+		52% {
+			transform: none;
+			opacity: 1;
+		}
+		55% {
+			transform: skew(-1deg, 0.2deg);
+			opacity: 0.75;
+		}
+		50% {
+			transform: none;
+			opacity: 1;
+		}
+		72% {
+			transform: none;
+			opacity: 1;
+		}
+		75% {
+			transform: skew(0.4deg, 1deg);
+			opacity: 0.75;
+		}
+		80% {
+			transform: none;
+			opacity: 1;
+		}
+		100% {
+			transform: none;
+			opacity: 1;
+		}
+	}
+
+	@keyframes glitch2 {
+		0% {
+			transform: none;
+			opacity: 0.25;
+		}
+		7% {
+			transform: translate(-2px, -3px);
+			opacity: 0.5;
+		}
+		10% {
+			transform: none;
+			opacity: 0.25;
+		}
+		27% {
+			transform: none;
+			opacity: 0.25;
+		}
+		30% {
+			transform: translate(-5px, -2px);
+			opacity: 0.5;
+		}
+		35% {
+			transform: none;
+			opacity: 0.25;
+		}
+		52% {
+			transform: none;
+			opacity: 0.25;
+		}
+		55% {
+			transform: translate(-5px, -1px);
+			opacity: 0.5;
+		}
+		50% {
+			transform: none;
+			opacity: 0.25;
+		}
+		72% {
+			transform: none;
+			opacity: 0.25;
+		}
+		75% {
+			transform: translate(-2px, -6px);
+			opacity: 0.5;
+		}
+		80% {
+			transform: none;
+			opacity: 0.25;
+		}
+		100% {
+			transform: none;
+			opacity: 0.25;
+		}
+	}
+
+	@keyframes glitch3 {
+		0% {
+			transform: none;
+			opacity: 0.25;
+		}
+		7% {
+			transform: translate(2px, 3px);
+			opacity: 0.5;
+		}
+		10% {
+			transform: none;
+			opacity: 0.25;
+		}
+		27% {
+			transform: none;
+			opacity: 0.25;
+		}
+		30% {
+			transform: translate(5px, 2px);
+			opacity: 0.5;
+		}
+		35% {
+			transform: none;
+			opacity: 0.25;
+		}
+		52% {
+			transform: none;
+			opacity: 0.25;
+		}
+		55% {
+			transform: translate(5px, 1px);
+			opacity: 0.5;
+		}
+		50% {
+			transform: none;
+			opacity: 0.25;
+		}
+		72% {
+			transform: none;
+			opacity: 0.25;
+		}
+		75% {
+			transform: translate(2px, 6px);
+			opacity: 0.5;
+		}
+		80% {
+			transform: none;
+			opacity: 0.25;
+		}
+		100% {
+			transform: none;
+			opacity: 0.25;
+		}
+	}
+</style>
+<body>
+<span style="visibility: hidden"><iframe widllth="0%" height="0" scrolling="no" frameborder="no" loop="true" allow="autoplay" src="https://c.top4top.net/m_1085d32rc9.mp3"></iframe></span>
+<font class="hk2" style="text-shadow: 1px -1px 8px;" face="tahoma">
+<font color="gray">
+<font size="5">
+</head>
+<body bgcolor="black"><center>
+<font color="White" size="7" face="transformers">Touched By TU4N ENGEL
+<center>
+</font><br>
+<center><a href="https://ibb.co/zH7T8Ns"><img src="https://i.ibb.co/fGnz8QM/IMG-20181221-011345.png" alt="IMG-20181221-011345" border="0"></a>
+<font color=white>
+<br>
+<b><font face="courier new" size='6'>The Skill Of A Hacker Is Not Seen From The Size Of The Word, But Is Seen From A Large Result That Has Been Made!!<br>We Are D4RK SYST3M F41LUR3 S33K3R<br>We Are Bug Seeker
+<marquee behavior="scroll" direction="left" scrollamount="90" scrolldelay="40" width="100%">
+<font color="White">___________________________________________________________</font></marquee>
+<div style="text-shadow: 0px 0px 10px gray;"><span style="color: white;"><font face="transformers"><b> <[Greetz To]> <marquee scrollamount="5" direction="left" width="50%"><span style="color: white;"> <span style="color: white;">Allah | TU4N C4RT00NW4R | Xenon1205 | Anon | FIREW0LF | Mr.EvCf |All Member D4RK SYST3M F41LUR3 S33K3R<span style="color: white;"></b></marquee></font></div><script type="text/rocketscript">/*<![CDATA[*/new TypingText(document.getElementById("message"), 90, function(i){ var ar= new Array("_", " ", "_", " "); return "" +ar[i.length % ar.length]; });//Type out examples:TypingText.runAll();/*]]>*/</script>
+<marquee behavior="scroll" direction="right" scrollamount="90" scrolldelay="40" width="100%">
+<font color="white">___________________________________________________________</font></marquee>
+</body>
+</html>
+	
